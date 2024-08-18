@@ -1,0 +1,4249 @@
+<html>
+
+<head>
+    <title>Techno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 100%;
+            height: 40px;
+            background-color: blue;
+            padding: 1px;
+            position: fixed;
+            z-index: 11;
+            
+            top: 0;
+
+        }
+
+        .nav-dv {
+            width: 200px;
+            height: 100%;
+            margin-left: 90px;
+            /* border: 1px solid black; */
+            /* margin-top: 10px; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .fa-envelope {
+            color: white;
+            font-size: 17px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+
+        .example {
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            margin-left: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .nav-dv1 {
+            width: 200px;
+            height: 100%;
+            /* margin-left: 90px; */
+            /* border: 1px solid black; */
+            /* margin-top: 10px; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .fa-map {
+            color: white;
+            font-size: 17px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+
+        .fa-phone {
+            color: white;
+            font-size: 17px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+
+        .nav-dv2 {
+            width: 130px;
+            height: 100%;
+            margin-left: 400px;
+            /* border: 1px solid black; */
+            /* margin-top: 10px; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .aa {
+            margin-top: 10px;
+            font-size: 17px;
+            color: white;
+            margin-left: 10px;
+
+        }
+
+        .nav2 {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 40px;
+            background-color: white;
+            z-index: 11;
+            box-shadow: 1px 1px 10px 5px;
+            /* border: 1px solid black; */
+        }
+
+        .main-logo {
+            width: 180px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 90px;
+            display: inline-block;
+
+            vertical-align: top;
+            /* border: 1px solid red; */
+
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+
+        .li-dv {
+            width: 640px;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            margin-left: 260px;
+        }
+
+        .la {
+            list-style: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 18px;
+            margin-left: 15px;
+            cursor: pointer;
+
+
+        }
+
+        .la:hover {
+            color: blue;
+        }
+
+        .fa-angle-down {
+            transform: translateY(2px);
+        }
+
+        .icon-dv {
+            width: 80px;
+            height: 40px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            margin-top: 30px;
+
+        }
+
+        .color-block {
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .fa-magnifying-glass {
+            margin-top: 6px;
+            color: white;
+            margin-left: 6px;
+        }
+
+        .fa-basket-shopping {
+            margin-top: 6px;
+            color: white;
+            margin-left: 6px;
+
+        }
+
+        .dropdown {
+            width: 1160px;
+            height: 460px;
+            margin-top: 48px;
+            margin-left: -460px;
+            /* border: 1px solid black; */
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            /* overflow: hidden; */
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .la:hover .dropdown {
+            visibility: visible;
+            margin-top: 38px;
+            opacity: 1;
+        }
+
+        .dropdown-dv1 {
+            width: 260px;
+            height: 100%;
+            margin-left: 20px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .lb {
+            list-style: none;
+            margin-top: 25px;
+            font-size: 19px;
+            font-weight: 500;
+            color: black;
+        }
+
+        .lb:hover {
+            color: blue;
+
+        }
+
+        .dropdown2 {
+            width: 270px;
+            height: 150px;
+            margin-top: 48px;
+
+            background-color: white;
+            /* border: 1px solid black; */
+            position: absolute;
+            visibility: hidden;
+            transition: 0.3s;
+            border-radius: 5px;
+            opacity: 0;
+        }
+
+        .ib {
+            list-style: none;
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 18px;
+            color: black;
+
+
+        }
+
+        .ib:hover {
+            color: blue;
+        }
+
+        .la:hover .dropdown2 {
+            visibility: visible;
+            margin-top: 38px;
+            opacity: 1;
+        }
+
+        .dropdown3 {
+            width: 1160px;
+            height: 350px;
+            margin-top: 48px;
+            margin-left: -730px;
+            /* border: 1px solid black; */
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            /* overflow: hidden; */
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .la:hover .dropdown3 {
+            visibility: visible;
+            margin-top: 38px;
+            opacity: 1;
+        }
+
+        .dropdown4 {
+            width: 1160px;
+            height: 320px;
+            margin-top: 48px;
+            margin-left: -810px;
+            /* border: 1px solid black; */
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            /* overflow: hidden; */
+            transition: 0.3s;
+            visibility: hidden;
+        }
+
+        .la:hover .dropdown4 {
+            visibility: visible;
+            margin-top: 38px;
+        }
+
+        .dropdown5 {
+            width: 300px;
+            height: 80px;
+            background-color: white;
+            /* border: 1px solid black; */
+            margin-top: 48px;
+            margin-left: -200px;
+            visibility: hidden;
+            transition: 0.5s;
+        }
+
+        .no {
+            color: rgb(97, 97, 97);
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .color-block:hover .dropdown5 {
+            visibility: visible;
+            margin-top: 44px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./download\ \(8\).jpg);
+            /* background-size: cover; */
+            padding: 1px;
+        }
+
+        .div1 {
+            width: 320px;
+            height: 30px;
+            margin-top: 200px;
+            margin-left: 80px;
+            /* border: 1px solid white; */
+        }
+
+        .wel {
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            font-weight: 500;
+            transform: translateY(-30px);
+            /* animation:play; */
+            animation: play .30s linear forwards;
+
+
+        }
+
+        @keyframes play {
+            from {
+                transform: translateY(-30px);
+
+            }
+
+            to {
+                transform: translateY(0px);
+
+            }
+
+        }
+
+        .a2 {
+            animation-delay: 0.10s;
+        }
+
+        .a3 {
+            animation-delay: 0.20s;
+        }
+
+        .a4 {
+            animation-delay: 0.30s;
+        }
+
+        .a5 {
+            animation-delay: 0.40s;
+        }
+
+        .a6 {
+            animation-delay: 0.50s;
+        }
+
+        .a7 {
+            animation-delay: 0.60s;
+        }
+
+        .a8 {
+            animation-delay: 0.70s;
+        }
+
+        .a9 {
+            animation-delay: 0.80s;
+        }
+
+        .a10 {
+            animation-delay: 0.90s;
+        }
+
+        .a11 {
+            animation-delay: 1s;
+        }
+
+        .a12 {
+            animation-delay: 1.10s;
+        }
+
+        .a13 {
+            animation-delay: 1.20s;
+        }
+
+        .a14 {
+            animation-delay: 1.30s;
+        }
+
+        .a15 {
+            animation-delay: 1.40s;
+        }
+
+        .div2 {
+            width: 700px;
+            height: 50px;
+            /* border: 1px solid green; */
+            /* margin-top: 20px; */
+            margin-left: 80px;
+            overflow: hidden;
+
+        }
+
+        .we {
+            display: inline-block;
+            font-size: 53px;
+            /* font-weight: bold; */
+            color: white;
+            margin-top: -20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transform: translateY(62px);
+
+            animation: play1 .30s linear forwards;
+
+        }
+
+        @keyframes play1 {
+            from {
+                transform: translateY(50px);
+
+            }
+
+            to {
+                transform: translateY(0px);
+
+            }
+
+        }
+
+        .b2 {
+            animation-delay: 0.10s;
+        }
+
+        .b3 {
+            animation-delay: 0.20s;
+        }
+
+        .b4 {
+            animation-delay: 0.30s;
+        }
+
+        .b5 {
+            animation-delay: 0.40s;
+        }
+
+        .b6 {
+            animation-delay: 0.50s;
+        }
+
+        .b7 {
+            animation-delay: 0.60s;
+        }
+
+        .b8 {
+            animation-delay: 0.70s;
+        }
+
+        .b9 {
+            animation-delay: 0.80s;
+        }
+
+        .b10 {
+            animation-delay: 0.90s;
+        }
+
+        .b11 {
+            animation-delay: 1s;
+        }
+
+        .b12 {
+            animation-delay: 1.10s;
+        }
+
+        .b13 {
+            animation-delay: 1.20s;
+        }
+
+        .b14 {
+            animation-delay: 1.30s;
+        }
+
+        .b15 {
+            animation-delay: 1.40s;
+        }
+
+        .b16 {
+            animation-delay: 1.50s;
+        }
+
+        .b17 {
+            animation-delay: 1.60s;
+        }
+
+        .b18 {
+            animation-delay: 1.70s;
+        }
+
+        .b19 {
+            animation-delay: 1.80s;
+        }
+
+        .b20 {
+            animation-delay: 1.90s;
+        }
+
+        .div3 {
+            width: 520px;
+            height: 60px;
+            /* border: 1px solid white; */
+            margin-top: 10px;
+            margin-left: 80px;
+            overflow: hidden;
+        }
+
+        .btn {
+            margin-left: 80px;
+            width: 200px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 100;
+            border: none;
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            background-color: blue;
+            animation: btn 1s linear 2s forwards;
+        }
+
+        @keyframes btn {
+            0% {
+                margin-left: 140px;
+                opacity: 0;
+            }
+
+            100% {
+                margin-left: 80px;
+                opacity: 1;
+            }
+        }
+
+        .parent-dv {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            /* border: 1px solid red; */
+            position: relative;
+            background-color: white;
+            left: 1200;
+            top: -140;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.4s;
+            animation: scal 3s linear forwards;
+        }
+
+        @keyframes scal {
+            0% {
+                right: 0;
+                opacity: 0;
+
+            }
+
+            50% {
+                right: 0;
+                opacity: 0;
+
+            }
+
+            75% {
+                right: 0;
+                opacity: 0;
+
+            }
+
+            100% {
+                right: 100px;
+                opacity: 1;
+            }
+        }
+
+        .white-dv {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: scle1 2s linear infinite;
+
+
+        }
+
+        @keyframes scle1 {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .fa-play {
+            position: absolute;
+            color: blue;
+            left: 27px;
+            top: 20px;
+            font-size: 30px;
+        }
+
+        .white-dv1 {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: scle2 2s linear infinite;
+            animation-delay: 0.6s;
+
+        }
+
+        @keyframes scle2 {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        .white-dv2 {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: scle3 2s linear infinite;
+            animation-delay: 0.7s;
+
+        }
+
+        @keyframes scle3 {
+            0% {
+                transform: scale(1);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        .container1 {
+            width: 100%;
+            height: 130vh;
+            /* border: 1px solid black; */
+        }
+
+        .main-box {
+            width: 80%;
+            height: 150px;
+            /* border: 1px solid black; */
+            margin: auto;
+
+            /* position: relative; */
+        }
+
+        .first-card {
+            width: 250px;
+            height: 220px;
+            margin-top: -100px;
+            border-radius: 5px;
+            /* position: absolute; */
+            position: relative;
+            /* border: 1px solid red; */
+            left: 10px;
+            perspective: 900px;
+            display: inline-block;
+            /* box-shadow: 1px 1px 20px 5px gray; */
+
+        }
+
+        .first-card:hover .second-card {
+            transform: rotateY(-180deg);
+        }
+
+        .second-card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 5px;
+            /* border: 1px solid black; */
+            transform-style: preserve-3d;
+            transition: 0.4s;
+
+
+
+
+        }
+
+        .front-card {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            padding: 1px;
+
+            backface-visibility: hidden;
+            z-index: 111;
+            box-shadow: 1px 1px 25px 2px gray;
+
+        }
+
+        .card-image {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 5px;
+
+        }
+
+        .ai {
+            width: 100%;
+            height: 100%;
+            filter: invert(30%) sepia(86%) saturate(1383%) hue-rotate(200deg) brightness(88%) contrast(117%);
+        }
+
+        .all {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+
+
+        }
+
+        .back-card {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            background-color: blue;
+            transform: rotateY(180deg);
+            border-radius: 5px;
+        }
+
+        .kind {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .whether {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .first-card1 {
+            width: 250px;
+            height: 220px;
+            margin-top: -100px;
+            border-radius: 5px;
+            /* position: absolute; */
+            position: relative;
+            /* border: 1px solid red; */
+            left: 20px;
+            perspective: 900px;
+            display: inline-block;
+            /* box-shadow: 1px 1px 20px 5px gray; */
+
+        }
+
+        .first-card1:hover .second-card {
+            transform: rotateY(-180deg);
+        }
+
+        .first-card2 {
+            width: 250px;
+            height: 220px;
+            margin-top: -100px;
+            border-radius: 5px;
+            /* position: absolute; */
+            position: relative;
+            /* border: 1px solid red; */
+            left: 30px;
+            perspective: 900px;
+            display: inline-block;
+            /* box-shadow: 1px 1px 20px 5px gray; */
+
+        }
+
+        .first-card2:hover .second-card {
+            transform: rotateY(-180deg);
+        }
+
+        .first-card3 {
+            width: 250px;
+            height: 220px;
+            margin-top: -100px;
+            border-radius: 5px;
+            /* position: absolute; */
+            position: relative;
+            /* border: 1px solid red; */
+            left: 40px;
+            perspective: 900px;
+            display: inline-block;
+            /* box-shadow: 1px 1px 20px 5px gray; */
+
+        }
+
+        .first-card3:hover .second-card {
+            transform: rotateY(-180deg);
+        }
+
+        .box1 {
+            width: 80%;
+            height: 90vh;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .box-one {
+            width: 49.5%;
+            height: 100%;
+            /* border: 1px solid; */
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .circle-image {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            margin-top: 190px;
+
+            /* border: 1px solid blue; */
+        }
+
+        .about {
+            width: 100%;
+            height: 100%;
+            animation-name: circle;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+        }
+
+        @keyframes circle {
+            from {
+                margin-top: 0;
+
+            }
+
+            to {
+                margin-top: 50px;
+
+            }
+        }
+
+        .about-image {
+            width: 530px;
+            height: 550px;
+            position: absolute;
+            /* border: 1px solid yellow; */
+        }
+
+        .about1 {
+            width: 107%;
+            height: 100%;
+        }
+
+        .box-two {
+            width: 49.5%;
+            height: 100%;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .of {
+            color: rgb(12, 90, 219);
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .preparing {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 20px;
+        }
+
+        .Solutions {
+            color: blue;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .border-line {
+            width: 100px;
+            /* border: 2px solid ; */
+            height: 5px;
+            background-color: rgb(174, 198, 239);
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+
+        .circle-box {
+            width: 10px;
+            height: 10px;
+            margin-left: 20px;
+            margin-top: -8px;
+
+            border-radius: 50%;
+            background-color: blue;
+            animation-name: ani;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes ani {
+            from {
+                margin-left: 20;
+
+            }
+
+            to {
+                margin-left: 110px;
+            }
+        }
+
+        .are {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 19px;
+            color: rgb(97, 97, 97);
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .image-icon {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid black; */
+            margin-top: 30px;
+            margin-left: 20px;
+
+
+        }
+
+        .hand {
+            width: 100%;
+            height: 100%;
+            filter: invert(30%) sepia(86%) saturate(1383%) hue-rotate(200deg) brightness(88%) contrast(117%);
+        }
+
+        .Warranty {
+            margin-left: 90px;
+            margin-top: -50px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Morem {
+            margin-left: 90px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            color: rgb(97, 97, 97);
+        }
+
+        .more {
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        .more:hover {
+            background-color: rgb(6, 6, 34)
+        }
+
+        .container3 {
+            width: 100%;
+            height: 128vh;
+            /* background-color: black; */
+        }
+
+        .video {
+            width: 100%;
+            height: 800px;
+            /* border: 1px solid red; */
+            position: relative;
+        }
+
+        .vd {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* position: absolute; */
+
+        }
+
+        .color {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.808);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .absolute {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 0;
+            /* text-align: center; */
+
+            /* left: 0; */
+        }
+
+        .ad {
+            width: 500px;
+            height: 120px;
+
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .SERVICES {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .provide {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(255, 255, 255)
+        }
+
+        .border1 {
+            width: 100px;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 15px;
+            height: 5px;
+            background-color: rgb(174, 198, 239);
+
+
+        }
+
+        .circle2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 197px;
+            margin-top: -7px;
+            background-color: blue;
+            animation-name: liner;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes liner {
+            from {
+                margin-left: 197px;
+            }
+
+            to {
+                margin-left: 290px;
+            }
+        }
+
+        .boxa {
+            width: 90%;
+            height: 90vh;
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .block1 {
+            width: 361px;
+            height: 248px;
+            /* border: 1px solid yellow; */
+            perspective: 1400px;
+            display: inline-block;
+        }
+
+
+        .block2 {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid white; */
+            transform-style: preserve-3d;
+            transition: all 0.4s linear;
+            position: relative;
+            transform: rotateY(0deg);
+            left: 0;
+
+        }
+
+        .block1:hover .block2 {
+            transform: rotateY(180deg);
+        }
+
+        .boxb {
+            width: 100%;
+            height: 100%;
+            /* background-color: gray; */
+            border: 2px solid blue;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            z-index: 135611;
+
+
+        }
+
+        .image-box {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .technical {
+            width: 100%;
+            height: 100%;
+            filter: invert(99%) sepia(93%) saturate(0%) hue-rotate(256deg) brightness(106%) contrast(100%);
+        }
+
+        .marketing {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .asum {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+
+        }
+
+        .boxc {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            transform: rotateY(-180deg);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s linear;
+            padding: 1px;
+        }
+
+        .block2:hover .boxc {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .strategy {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .molor {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+
+        .read {
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            margin-top: 30px;
+            font-size: 18px;
+            margin-left: 100px;
+            border: none;
+
+        }
+
+        .read:hover {
+            background-color: rgb(4, 4, 63);
+            color: white;
+        }
+
+        .block2 {
+            width: 361px;
+            height: 248px;
+            /* border: 1px solid yellow; */
+            perspective: 1400px;
+            margin-left: 30px;
+            display: inline-block;
+        }
+
+        .block2:hover .block2 {
+            transform: rotateY(180deg);
+        }
+
+        .block3 {
+            width: 361px;
+            height: 248px;
+            /* border: 1px solid yellow; */
+            perspective: 1400px;
+            margin-left: 30px;
+            display: inline-block;
+        }
+
+        .block3:hover .block2 {
+            transform: rotateY(180deg);
+        }
+
+        .card-one {
+            width: 356px;
+            height: 248px;
+            position: relative;
+            /* border: 1px solid white; */
+            margin-top: 30px;
+            perspective: 1400px;
+            display: inline-block;
+            vertical-align: top;
+            left: 30px;
+        }
+
+        .card-two {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            transform-style: preserve-3d;
+            transition: all 0.4s linear;
+            position: relative;
+            transform: rotateX(0);
+            top: 0;
+            left: 0;
+        }
+
+        .card-one:hover .card-two {
+            transform: rotatex(180deg);
+        }
+
+        .card-three {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid blue;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            z-index: 111;
+        }
+
+        .card-four {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            background-color: blue;
+            transform: rotatex(-180deg);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.4s linear;
+            padding: 1px;
+        }
+
+        .card-two:hover .card-four {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card-one1 {
+            width: 356px;
+            height: 248px;
+            position: relative;
+            /* border: 1px solid white; */
+            margin-top: 30px;
+            perspective: 1400px;
+            display: inline-block;
+            vertical-align: top;
+            left: 70px;
+        }
+
+        .card-one1:hover .card-two {
+            transform: rotatex(180deg);
+        }
+
+        .card-one2 {
+            width: 356px;
+            height: 248px;
+            position: relative;
+            /* border: 1px solid white; */
+            margin-top: 30px;
+            perspective: 1400px;
+            display: inline-block;
+            vertical-align: top;
+            left: 100px;
+        }
+
+        .card-one2:hover .card-two {
+            transform: rotatex(180deg);
+        }
+
+        .container4 {
+            width: 100%;
+            height: 125vh;
+            /* border: 1px solid; */
+            background-image: url(./team-bg2.jpg);
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+            padding: 1px;
+        }
+
+        .line1 {
+            width: 86%;
+            height: 30vh;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        .line-box {
+            width: 49.5%;
+            height: 100%;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .MEMBER {
+            font-size: 20px;
+            font-weight: bold;
+            font-weight: 500;
+            color: rgb(12, 90, 219)
+        }
+
+        .our {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .border2 {
+            width: 100px;
+            height: 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: rgb(174, 198, 239);
+        }
+
+        .circle9 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-top: -8px;
+            animation-name: scroll;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                margin-left: 0;
+
+            }
+
+            to {
+                margin-left: 90px;
+            }
+        }
+
+        .view {
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            margin-left: 350px;
+            margin-top: 100px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: rgb(12, 90, 219);
+            border: none;
+        }
+
+        .view:hover {
+            background-color: blue;
+
+        }
+
+        .full-width {
+            width: 100%;
+            height: 87vh;
+            position: relative;
+            /* border: 1px solid blue; */
+        }
+
+        .circl-one {
+            width: 250px;
+            height: 250px;
+
+            margin-top: 250px;
+            position: absolute;
+            /* border: 1px solid black; */
+        }
+
+        .about-circle {
+            width: 100%;
+            height: 100%;
+            animation-name: circle1;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+
+
+        }
+
+        @keyframes circle1 {
+            from {
+                margin-top: 0;
+
+            }
+
+            to {
+                margin-top: 30px;
+
+            }
+        }
+
+        .full-line {
+            width: 87%;
+            height: 70vh;
+
+            /* border: 1px solid black; */
+            position: absolute;
+            margin-left: 90px;
+        }
+
+        .blocka {
+            width: 267px;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            border-bottom: 4px solid blue;
+            background-color: white;
+            transition: 0.5s;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .blocka:hover {
+            margin-top: -10px;
+        }
+
+        .blockb {
+            width: 100%;
+            height: 321px;
+            position: absolute;
+            /* border: 1px solid yellow; */
+        }
+
+        .team {
+            width: 100%;
+            height: 100%;
+            border: 5px;
+            position: absolute;
+
+        }
+
+        .blue-dv {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.562);
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .blocka:hover .blue-dv {
+            opacity: 1;
+        }
+
+        .David {
+            left: 60px;
+            position: absolute;
+            font-size: 20px;
+            top: 350px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .ceo {
+
+            position: absolute;
+            color: blue;
+            top: 390px;
+            left: 90px;
+        }
+
+        .white-box {
+            width: 50px;
+            height: 150px;
+            margin-left: 265px;
+            margin-top: 70px;
+            background-color: white;
+            transition: 0.5s;
+
+        }
+
+        .blocka:hover .white-box {
+            margin-left: 215px;
+        }
+
+        .one {
+            font-size: 20px;
+            color: blue;
+            margin-top: 20px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        .blockaa {
+            width: 267px;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            border-bottom: 4px solid blue;
+            background-color: white;
+            transition: 0.5s;
+            display: inline-block;
+            vertical-align: top;
+            left: 300px;
+        }
+
+        .blockaa:hover {
+            margin-top: -10px;
+        }
+
+        .blue-dv {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.562);
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .blockaa:hover .blue-dv {
+            opacity: 1;
+        }
+
+        .white-box {
+            width: 50px;
+            height: 150px;
+            margin-left: 265px;
+            margin-top: 70px;
+            background-color: white;
+            transition: 0.5s;
+
+        }
+
+        .blockaa:hover .white-box {
+            margin-left: 215px;
+        }
+
+        .blocka1 {
+            width: 267px;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            border-bottom: 4px solid blue;
+            background-color: white;
+            transition: 0.5s;
+            display: inline-block;
+            vertical-align: top;
+            left: 600px;
+        }
+
+        .blocka1:hover {
+            margin-top: -10px;
+        }
+
+        .blue-dv {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.562);
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .blocka1:hover .blue-dv {
+            opacity: 1;
+        }
+
+        .white-box {
+            width: 50px;
+            height: 150px;
+            margin-left: 265px;
+            margin-top: 70px;
+            background-color: white;
+            transition: 0.5s;
+
+        }
+
+        .blocka1:hover .white-box {
+            margin-left: 215px;
+        }
+
+        .blocka2 {
+            width: 267px;
+            height: 100%;
+            border-radius: 5px;
+            position: absolute;
+            border-bottom: 4px solid blue;
+            background-color: white;
+            transition: 0.5s;
+            display: inline-block;
+            vertical-align: top;
+            left: 900px;
+        }
+
+        .blocka2:hover {
+            margin-top: -10px;
+        }
+
+        .blue-dv {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.562);
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .blocka2:hover .blue-dv {
+            opacity: 1;
+        }
+
+        .white-box {
+            width: 50px;
+            height: 150px;
+            margin-left: 265px;
+            margin-top: 70px;
+            background-color: white;
+            transition: 0.5s;
+
+        }
+
+        .blocka2:hover .white-box {
+            margin-left: 215px;
+        }
+
+        .container5 {
+            width: 100%;
+            height: 200vh;
+            /* border: 1px solid black; */
+        }
+
+        .high-dv {
+            width: 450px;
+            height: 180px;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid black; */
+        }
+
+        .case {
+            text-align: center;
+            color: blue;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .latest {
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .bordera {
+            width: 100px;
+            height: 5px;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+            background-color: rgb(174, 198, 239);
+        }
+
+        .circle4 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 173px;
+            margin-top: -7px;
+            background-color: blue;
+            animation-name: anim;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes anim {
+            from {
+                margin-left: 173px;
+            }
+
+            to {
+                margin-left: 270;
+            }
+        }
+
+        .slider {
+            width: 100%;
+            height: 70vh;
+            /* border: 1px solid yellow; */
+            margin-top: 30px;
+            overflow: hidden;
+        }
+
+        .slide2 {
+            width: 200%;
+            height: 100%;
+            /* border: 2px solid red; */
+
+            animation: slide 16s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                margin-left: 0;
+            }
+
+            12.5% {
+                margin-left: -25%;
+
+            }
+
+            25% {
+                margin-left: -25%;
+            }
+
+            26% {
+                margin-left: -25%;
+
+            }
+
+            38.5% {
+                margin-left: -50%;
+
+            }
+
+            50% {
+                margin-left: -50%;
+            }
+
+            51% {
+                margin-left: -50%;
+            }
+
+            63.5% {
+                margin-left: -75%;
+            }
+
+            75% {
+                margin-left: -75%;
+            }
+
+            76% {
+                margin-left: -75%;
+            }
+
+            88.5% {
+                margin-left: -100%;
+
+            }
+
+            100% {
+                margin-left: -100%;
+            }
+        }
+
+        .image1 {
+            width: 337px;
+            height: 100%;
+            margin-left: -5px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .one-a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .color-div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.377);
+            opacity: 0;
+
+        }
+
+        .image1:hover .color-div {
+            opacity: 1;
+        }
+
+        .white-card {
+            width: 250px;
+            height: 150px;
+            left: 40;
+            border-radius: 5px;
+            top: 280px;
+            background-color: white;
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s;
+
+        }
+
+        .image1:hover .white-card {
+            opacity: 1;
+            margin-top: -140px;
+        }
+
+        .Solution {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 40px;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .Solution:hover {
+            color: blue;
+        }
+
+        .Digital {
+            text-align: center;
+            color: blue;
+            margin-top: 10px;
+            font-size: 18px;
+
+        }
+
+        .small-line {
+            width: 100px;
+            height: 30px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .lin1 {
+            width: 50px;
+            height: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            background-color: blue;
+        }
+
+        .lin2 {
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: rgb(191, 202, 220);
+            display: inline-block;
+        }
+
+        .scale-dv1 {
+            width: 68%;
+            height: 15vh;
+            /* border: 1px solid yellow; */
+            margin: auto;
+        }
+
+        .main-circle1 {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            border-radius: 50%;
+            position: relative;
+            padding: 1px;
+        }
+
+        .circle1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 255, 0.418);
+            transform: scale(1.5);
+            position: absolute;
+            /* display: inline-block; */
+        }
+
+        .circle-1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 255, 0.418);
+            transform: scale(1.3);
+            position: absolute;
+        }
+
+        .circle-blue {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            /* color: white; */
+            /* left: 20px; */
+        }
+
+        .oen {
+            color: white;
+            margin-top: 7px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .dot {
+            width: 300px;
+            height: 1px;
+            border: 1px dotted blue;
+            margin-left: 70px;
+            margin-top: 25px;
+        }
+
+        .main-circle2 {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            border-radius: 50%;
+            position: relative;
+            left: 430px;
+            top: -50px;
+            padding: 1px;
+        }
+
+        .main-circle3 {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            border-radius: 50%;
+            position: relative;
+            left: 840px;
+            top: -100px;
+        }
+
+        .box-card {
+            width: 80%;
+            height: 30vh;
+            margin: auto;
+            /* border: 1px solid black; */
+
+        }
+
+        .box-card1 {
+            width: 250px;
+            height: 100%;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .select {
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Project {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 17px;
+            line-height: 22px;
+            font-weight: 500;
+            color: rgb(97, 97, 97);
+
+        }
+
+        .box-card2 {
+            width: 250px;
+            height: 100%;
+            margin-left: 160px;
+            /* border: 1px solid black; */
+            display: inline-block;
+        }
+
+        .box-card3 {
+            width: 250px;
+            height: 100%;
+            margin-left: 155px;
+            /* border: 1px solid black; */
+            display: inline-block;
+        }
+
+        .container6 {
+            width: 100%;
+            height: 80vh;
+            background-color: blue;
+            padding: 1px;
+        }
+
+        .conatin {
+            width: 80%;
+            height: 40vh;
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .conatin1 {
+            width: 49.5%;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .cell {
+            color: white;
+            font-size: 20px;
+        }
+
+        .Make {
+            font-size: 45px;
+            margin-top: 10px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .now {
+            width: 150px;
+            height: 50px;
+            /* background-color: white; */
+            color: blue;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .now:hover {
+            background-color: rgb(5, 5, 61);
+            color: white;
+        }
+
+        .gaol {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 400px;
+            margin-top: 70px;
+            /* border: 1px solid yellow; */
+            position: relative;
+        }
+
+        .gaol1 {
+            width: 80px;
+            position: absolute;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.548);
+
+            animation: ply 2s linear infinite;
+            /* transform: scale(1.5);  */
+        }
+
+        @keyframes ply {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        .goal2 {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        .tw {
+            /* position: absolute; */
+            margin-left: 5px;
+            margin-top: 3px;
+        }
+
+        .container7 {
+            width: 100%;
+            height: 150vh;
+        }
+
+        .boder-card {
+            width: 80%;
+            height: 40vh;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: -100px;
+            border-radius: 10px;
+            background-image: url(./about-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 1px 1px 10px 1px;
+        }
+
+        .card-border1 {
+            width: 260px;
+            height: 100px;
+            margin-top: 60px;
+            border-left: 1px solid blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .ok {
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .happy {
+            font-size: 22px;
+            color: blue;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+
+        .last-card {
+            width: 80%;
+            height: 55vh;
+            margin: auto;
+            margin-top: 50px;
+            /* border: 1px solid black; */
+            overflow: hidden;
+        }
+
+        .last-card1 {
+            width: 340px;
+            height: 100%;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        .last-slide {
+            width: 200%;
+            height: 100%;
+            /* border: 2px solid red; */
+            animation-name: animation;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animation {
+            0% {
+                margin-left: 0;
+            }
+
+            16.5% {
+                margin-left: 0;
+            }
+
+            33% {
+                margin-left: -33%;
+            }
+
+            49.5% {
+                margin-left: -33%;
+
+            }
+
+            66% {
+                margin-left: -66%;
+
+            }
+
+            82.5% {
+                margin-left: -66%;
+
+            }
+
+            100% {
+                margin-left: -100%;
+            }
+        }
+
+
+
+
+        .simple-card {
+            width: 100%;
+            height: 180px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 1px;
+            box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.637);
+
+        }
+
+        .ipsum {
+            margin-top: 30px;
+            margin-left: 20px;
+            font-size: 18px;
+            color: rgb(97, 97, 97);
+        }
+
+        .circle-image1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .aa1 {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+        }
+
+        .icon-div {
+            width: 200px;
+            height: 100px;
+            /* border: 1px solid yellow; */
+            margin-top: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .fa-star {
+            color: blue;
+            font-size: 18px;
+            /* margin-top: -400px; */
+        }
+
+        .gray {
+            color: rgb(221, 221, 221);
+            font-size: 18px;
+        }
+
+        .jamal {
+            font-size: 20px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Developer {
+            color: blue;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .last-card2 {
+            width: 340px;
+            height: 100%;
+            margin-left: 20px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .container8 {
+            width: 100%;
+            height: 120vh;
+            background-color: blue;
+            padding: 1px;
+        }
+
+        .CASEs {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .latests {
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .circl-onea {
+            width: 250px;
+            height: 250px;
+            margin-left: 1070px;
+
+            /* margin-top: 250px; */
+            position: absolute;
+            /* border: 1px solid black; */
+        }
+
+        .text-dv {
+            width: 80%;
+            height: 50vh;
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .input {
+            width: 530px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            background-color: rgb(61, 123, 226);
+        }
+
+        .input::placeholder {
+            color: white;
+        }
+
+        .input1 {
+            width: 530px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: rgb(61, 123, 226);
+        }
+
+        .input1::placeholder {
+            color: white;
+        }
+
+        .input2 {
+            width: 530px;
+            height: 50px;
+            border-radius: 5px;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            /* margin-left: 10px; */
+            margin-top: 10px;
+            background-color: rgb(61, 123, 226);
+        }
+
+        .input2::placeholder {
+            color: white;
+        }
+
+        .input3 {
+            width: 100%;
+            height: 150px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: rgb(61, 123, 226);
+        }
+
+        .input3::placeholder {
+            color: white;
+        }
+
+        .free {
+            width: 200px;
+            height: 60px;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 19px;
+            margin-left: 580px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .free:hover {
+            background-color: rgb(8, 8, 73);
+            color: white;
+        }
+
+        .container9 {
+            width: 100%;
+            height: 130vh;
+            /* border: 5px solid red; */
+        }
+
+        .image-slider {
+            width: 90%;
+            height: 90vh;
+            margin: auto;
+            overflow: hidden;
+            /* border: 1px solid red; */
+        }
+
+        .image-slide1 {
+            width: 200%;
+            height: 100%;
+            /* border: 2px solid blue; */
+            animation-name: animtion;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animtion {
+            0% {
+                margin-left: 0;
+            }
+
+            16.5% {
+                margin-left: 0;
+            }
+
+            33% {
+                margin-left: -33%;
+            }
+
+            49.5% {
+                margin-left: -33%;
+
+            }
+
+            66% {
+                margin-left: -66%;
+
+            }
+
+            82.5% {
+                margin-left: -66%;
+
+            }
+
+            100% {
+                margin-left: -100%;
+            }
+        }
+
+        .image-slide3 {
+            width: 380px;
+            height: 100%;
+            border: 1px solid black;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .image-tag {
+            width: 100%;
+            height: 300px;
+            /* border: 1px solid brown; */
+            position: relative;
+
+
+        }
+
+        .blogs {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .Wordpress {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            width: 130px;
+            height: 30px;
+            color: white;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            background-color: blue;
+        }
+
+        .section-one {
+            width: 300px;
+            height: 20px;
+            margin-top: 20px;
+            /* border: 1px solid gray; */
+
+        }
+
+        .section-two {
+            width: 60px;
+            height: 100%;
+            border-right: 1px solid black;
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .techno {
+            font-size: 17px;
+        }
+
+        .section-two:hover .techno {
+            opacity: 0;
+        }
+
+        .section-thre {
+            width: 150px;
+            height: 100%;
+            /* border-right: 1px solid black; */
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .section-thre:hover .techno {
+            opacity: 0;
+        }
+
+        .tiktok {
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tiktok:hover {
+            color: blue;
+        }
+
+        .Transformation {
+            margin-top: 10px;
+            font-size: 18px;
+            margin-left: 30px;
+            color: rgb(97, 97, 97);
+        }
+
+        .more1 {
+            margin-left: 30px;
+            margin-top: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .more1:hover {
+            color: blue;
+
+        }
+
+        .image-slide4 {
+            width: 380px;
+            height: 100%;
+            border: 1px solid black;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 22px;
+
+        }
+
+        .container10 {
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(12, 90, 219);
+            padding: 1px;
+        }
+
+        .Subscribe {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+
+        }
+
+        .last-section {
+            width: 650px;
+            height: 60px;
+            margin: auto;
+            margin-top: 50px;
+            position: relative;
+            /* border: 1px solid red; */
+
+        }
+
+        .last {
+            width: 650px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 10px;
+            position: absolute;
+        }
+
+        .comment {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-top: 5px;
+            left: 490px;
+            cursor: pointer;
+        }
+
+        .container11 {
+            width: 100%;
+            height: 72vh;
+            background-image: url(./footer-threee.jpg);
+            background-size: cover;
+            padding: 1px;
+
+        }
+
+        .footer-dv {
+            width: 90%;
+            height: 54vh;
+            margin: auto;
+            margin-top: 30px;
+            border-bottom: 1px solid blue;
+        }
+
+        .footer-block {
+            width: 260px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .footer-logo {
+            width: 180px;
+            height: 50px;
+            /* border: 1px solid yellow; */
+        }
+
+        .Completely {
+            margin-top: 20px;
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .Follow {
+            color: white;
+            margin-top: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer-icon {
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: rgb(24, 125, 255);
+            display: inline-block;
+            vertical-align: tpo;
+
+        }
+
+        .footer-icon1 {
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: rgb(24, 125, 255);
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+
+        }
+
+        .alone {
+            color: white;
+            margin-top: 10px;
+            margin-left: 12px;
+            font-size: 18px;
+
+        }
+
+        .footer-block1 {
+            width: 260px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .quick {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer-li {
+            list-style: none;
+            margin-top: 25px;
+            color: white;
+            margin-left: px;
+            font-size: 18px;
+        }
+
+        .footer-block2 {
+            width: 360px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .h2-text {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .footer-image {
+            width: 100%;
+            height: 120px;
+            margin-top: 15px;
+            border-bottom: 1px solid gray;
+
+        }
+
+        .image1-a {
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid black; */
+        }
+
+        .bba {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            /* object-fit: cover; */
+        }
+
+        .text-block {
+            width: 240px;
+            height: 90px;
+            margin-left: 20px;
+            /* border: 1px solid black; */
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .collecting {
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .janur {
+            color: white;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .footer-image1 {
+            width: 100%;
+            height: 120px;
+            margin-top: 15px;
+            /* border-bottom: 1px solid gray; */
+
+        }
+
+        .footer-block3 {
+            width: 310px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .Info {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 30px;
+        }
+
+        .end-section {
+            width: 270px;
+            height: 70px;
+            margin-top: 10px;
+            margin-left: 30px;
+            /* border: 1px solid white;  */
+        }
+
+        .rounder-border {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .fa-location-dot {
+            color: white;
+            margin-left: 16px;
+            font-size: 19px;
+            margin-top: 16px;
+        }
+
+        .location {
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .street {
+            margin-left: 60px;
+            margin-top: -20px;
+            color: blue;
+        }
+
+        .da {
+            color: white;
+            margin-left: 16px;
+            font-size: 19px;
+            margin-top: 16px;
+        }
+
+        .end-footer {
+            width: 90%;
+            height: 9vh;
+            margin: auto;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+
+        }
+
+        .Rights {
+            color: white;
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .end-footer1 {
+            width: 400px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 500px;
+
+        }
+
+        .Privacy {
+            color: white;
+            font-size: 18px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-dv">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="example">example@example.com</p>
+        </div>
+        <div class="nav-dv1">
+            <i class="fa-solid fa-map"></i>
+            <p class="example">example@example.com</p>
+        </div>
+        <div class="nav-dv1">
+            <i class="fa-solid fa-phone"></i>
+            <p class="example">example@example.com</p>
+        </div>
+        <div class="nav-dv2">
+            <i class="fa-brands fa-facebook-f aa"></i>
+            <i class="fa-brands fa-twitter aa"></i>
+            <i class="fa-brands fa-instagram aa"></i>
+            <i class="fa-solid fa-globe aa"></i>
+        </div>
+
+    </div>
+    <div class="nav2">
+        <div class="main-logo">
+            <img class="main" src="./main-logo.png" alt="">
+        </div>
+        <div class="li-dv">
+            <ul>
+                <li class="la">Home
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown">
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+                                <li class="lb">IT Solution Demo 03</li>
+                                <li class="lb">IT Solution Demo 04</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+                                <li class="lb">IT Solution Demo 03</li>
+                                <li class="lb">IT Solution Demo 04</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+                                <li class="lb">IT Solution Demo 03</li>
+                                <li class="lb">IT Solution Demo 04</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+                                <li class="lb">IT Solution Demo 03</li>
+                                <li class="lb">IT Solution Demo 04</li>
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="la">Company
+                    <!-- <i class="fa-solid fa-angle-down"></i> -->
+                </li>
+
+                <li class="la">Services
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown2">
+                        <ul>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="la">Pages
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown3">
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Main Demo</li>
+                                <li class="lb">IT Solution (New)</li>
+                                <li class="lb">Digital Agency (New)</li>
+                                <li class="lb">Software & Startup(New)</li>
+                                <li class="lb">Home SEO (New)</li>
+                                <li class="lb">Insurance (New)</li>
+                                <li class="lb">IT Solution Demo 02</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="la">Elements
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown4">
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Features Box</li>
+                                <li class="lb">Service Boxes</li>
+                                <li class="lb">Icon Boxes</li>
+                                <li class="lb">Services Boxes Carousel</li>
+                                <li class="lb">Team</li>
+                                <li class="lb">Icons</li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Features Box</li>
+                                <li class="lb">Service Boxes</li>
+                                <li class="lb">Icon Boxes</li>
+                                <li class="lb">Services Boxes Carousel</li>
+                                <li class="lb">Team</li>
+                                <li class="lb">Icons</li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Features Box</li>
+                                <li class="lb">Service Boxes</li>
+                                <li class="lb">Icon Boxes</li>
+                                <li class="lb">Services Boxes Carousel</li>
+                                <li class="lb">Team</li>
+                                <li class="lb">Icons</li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown-dv1">
+                            <ul>
+                                <li class="lb">Features Box</li>
+                                <li class="lb">Service Boxes</li>
+                                <li class="lb">Icon Boxes</li>
+                                <li class="lb">Services Boxes Carousel</li>
+                                <li class="lb">Team</li>
+                                <li class="lb">Icons</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="la">Blog
+                    <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown2">
+                        <ul>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                            <li class="ib">It Services</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="la">Contact</li>
+            </ul>
+
+        </div>
+        <div class="icon-dv">
+            <div class="color-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+            <div class="color-block">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <div class="dropdown5">
+                    <p class="no">No products in the cart.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="div1">
+            <p class="wel a1">W</p>
+            <p class="wel a2 ">E</p>
+            <P class="wel a3 "> L</P>
+            <p class="wel a4">C</p>
+            <p class="wel a5">O</p>
+            <p class="wel a6">M</p>
+            <p class="wel a7">E &nbsp;</p>
+            <p class="wel a8">T </p>
+            <p class="wel a9">O &nbsp; </p>
+            <p class="wel a10">T </p>
+            <p class="wel a11">E</p>
+            <p class="wel a12">C</p>
+            <p class="wel a13">H</p>
+            <p class="wel a14">N</p>
+            <p class="wel a15">O</p>
+        </div>
+        <div class="div2">
+            <p class="we b1">w</p>
+            <p class="we b2">e &nbsp;</p>
+            <P class="we b3">a</P>
+            <p class="we b4">r</p>
+            <p class="we b5">e &nbsp;</p>
+            <p class="we b6">a&nbsp;</p>
+            <p class="we b7">C</p>
+            <p class="we b8">r</p>
+            <p class="we b9">e</p>
+            <p class="we b10">a</p>
+            <p class="we b11">t</p>
+            <p class="we b12">i</p>
+            <p class="we b13">v</p>
+            <p class="we b14">e&nbsp;</p>
+            <p class="we b15">a</p>
+            <p class="we b16">g</p>
+            <p class="we b17">e</p>
+            <p class="we b18">n</p>
+            <p class="we b19">c</p>
+            <p class="we b20">y</p>
+
+        </div>
+        <div class="div3">
+            <p class="we b1">F</p>
+            <p class="we b2">o</p>
+            <P class="we b3">r &nbsp;</P>
+            <p class="we b4">Y</p>
+            <p class="we b5">o </p>
+            <p class="we b6">u</p>
+            <p class="we b7">r &nbsp;</p>
+            <p class="we b8">B</p>
+            <p class="we b9">u</p>
+            <p class="we b10">s</p>
+            <p class="we b11">i</p>
+            <p class="we b12">n</p>
+            <p class="we b13">e</p>
+            <p class="we b14">s</p>
+            <p class="we b15">s</p>
+
+        </div>
+        <button class="btn">How It Work</button>
+
+        <div class="parent-dv">
+            <div class="white-dv"></div>
+            <div class="white-dv1"></div>
+            <div class="white-dv2"></div>
+            <div class="white-dv3">
+                <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="main-box">
+            <div class="first-card">
+                <div class="second-card">
+                    <div class="front-card">
+                        <div class="card-image">
+                            <img class="ai" src="./ai.png" alt="">
+                        </div>
+                        <h1 class="all">Provide All Kind of It Service</h1>
+                    </div>
+                    <div class="back-card">
+                        <h1 class="kind">Provide All Kind of It Service</h1>
+                        <p class="whether">Whether bringing new and amazing products and an services to market</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="first-card1">
+                <div class="second-card">
+                    <div class="front-card">
+                        <div class="card-image">
+                            <img class="ai" src="./ai.png" alt="">
+                        </div>
+                        <h1 class="all">Provide All Kind of It Service</h1>
+                    </div>
+                    <div class="back-card">
+                        <h1 class="kind">Provide All Kind of It Service</h1>
+                        <p class="whether">Whether bringing new and amazing products and an services to market</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="first-card2">
+                <div class="second-card">
+                    <div class="front-card">
+                        <div class="card-image">
+                            <img class="ai" src="./ai.png" alt="">
+                        </div>
+                        <h1 class="all">Provide All Kind of It Service</h1>
+                    </div>
+                    <div class="back-card">
+                        <h1 class="kind">Provide All Kind of It Service</h1>
+                        <p class="whether">Whether bringing new and amazing products and an services to market</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="first-card3">
+                <div class="second-card">
+                    <div class="front-card">
+                        <div class="card-image">
+                            <img class="ai" src="./ai.png" alt="">
+                        </div>
+                        <h1 class="all">Provide All Kind of It Service</h1>
+                    </div>
+                    <div class="back-card">
+                        <h4 class="kind">Provide All Kind of It Service</h4>
+                        <p class="whether">Whether bringing new and amazing products and an services to market</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="box-one">
+                <div class="circle-image">
+                    <img class="about" src="./about-circle.png" alt="">
+                </div>
+                <div class="about-image">
+                    <img class="about1" src="./about-img.png" alt="">
+                </div>
+
+            </div>
+            <div class="box-two">
+                <p class="of">30 YEARS OF EXPERIENCE</p>
+                <h1 class="preparing">Preparing For Your Success
+                    Provide Best <span class="Solutions">IT Solutions.</span></h1>
+
+                <div class="border-line">
+
+                </div>
+                <div class="circle-box"></div>
+                <p class="are">We are privileged to work with hundred future-thinking awesome businesses including many
+                    of the
+                    world’s top hardware and get IT service for your technology.</p>
+
+                <div class="image-icon">
+                    <img class="hand" src="./hand.png" alt="">
+
+                </div>
+                <h1 class="Warranty">
+                    Warranty Management</h1>
+                <p class="Morem">Morem Ipsum is simply dummy text of the printing and presetting found it agency
+                    business.</p>
+                <div class="image-icon">
+                    <img class="hand" src="./chain.png" alt="">
+
+                </div>
+                <h1 class="Warranty">
+
+                    Quality Control System</h1>
+                <p class="Morem">Porem Ipsum is simply dummy text of the printing and presetting found best quality for
+                    business.
+
+                </p>
+                <button class="more">Read More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container3">
+        <div class="video">
+            <video class="vd" src="./videohive.mp4" loop autoplay muted></video>
+            <div class="color"></div>
+            <div class="absolute">
+                <div class="ad">
+                    <p class="SERVICES">SERVICES</p>
+                    <h1 class="provide">Provide Exclusive Services</h1>
+                    <div class="border1"></div>
+                    <div class="circle2"></div>
+                </div>
+
+                <div class="boxa">
+                    <div class="block1">
+                        <div class="block2">
+                            <div class="boxb">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="boxc">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="block2">
+                        <div class="block2">
+                            <div class="boxb">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="boxc">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="block3">
+                        <div class="block2">
+                            <div class="boxb">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="boxc">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="card-one">
+                        <div class="card-two">
+                            <div class="card-three">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="card-four">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="card-one1">
+                        <div class="card-two">
+                            <div class="card-three">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="card-four">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="card-one2">
+                        <div class="card-two">
+                            <div class="card-three">
+                                <div class="image-box">
+                                    <img class="technical" src="./technical-support.png" alt="">
+                                </div>
+                                <h2 class="marketing">Marketing strategy</h2>
+                                <p class="asum">Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                            </div>
+                            <div class="card-four">
+                                <h2 class="strategy">Marketing strategy</h2>
+                                <p class="molor"> Porem asum molor sit amet, consectetur <br> adipiscing do miusmod
+                                    tempor.</p>
+                                <button class="read">Read more</button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container4">
+        <div class="line1">
+            <div class="line-box">
+                <p class="MEMBER">TEAM MEMBER</p>
+                <h1 class="our">Our Awesome Creative <br>
+                    Team Member</h1>
+                <div class="border2"></div>
+                <div class="circle9"></div>
+            </div>
+            <div class="line-box">
+                <button class="view">View All Member</button>
+            </div>
+        </div>
+        <div class="full-width">
+            <div class="circl-one">
+                <img class="about-circle" src="./about-circle.png" alt="">
+            </div>
+            <div class="full-line">
+                <div class="blocka">
+                    <div class="blockb">
+                        <img class="team" src="./team4.jpg" alt="">
+                        <div class="blue-dv">
+                            <div class="white-box">
+                                <i class="fa-brands fa-facebook-f one"></i>
+                                <i class="fa-brands fa-twitter one"></i>
+                                <i class="fa-brands fa-linkedin one"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="David">David Malaan</h2>
+                    <p class="ceo">CEO</p>
+
+                </div>
+
+                <div class="blockaa">
+                    <div class="blockb">
+                        <img class="team" src="./team5.jpg" alt="">
+                        <div class="blue-dv">
+                            <div class="white-box">
+                                <i class="fa-brands fa-facebook-f one"></i>
+                                <i class="fa-brands fa-twitter one"></i>
+                                <i class="fa-brands fa-linkedin one"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="David">Andres Jhohne</h2>
+                    <p class="ceo">DIRECTOR</p>
+
+                </div>
+                <div class="blocka1">
+                    <div class="blockb">
+                        <img class="team" src="./team6.jpg" alt="">
+                        <div class="blue-dv">
+                            <div class="white-box">
+                                <i class="fa-brands fa-facebook-f one"></i>
+                                <i class="fa-brands fa-twitter one"></i>
+                                <i class="fa-brands fa-linkedin one"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="David">Michel Balak</h2>
+                    <p class="ceo">FOUNDER</p>
+
+                </div>
+                <div class="blocka2">
+                    <div class="blockb">
+                        <img class="team" src="./team7.jpg" alt="">
+                        <div class="blue-dv">
+                            <div class="white-box">
+                                <i class="fa-brands fa-facebook-f one"></i>
+                                <i class="fa-brands fa-twitter one"></i>
+                                <i class="fa-brands fa-linkedin one"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 class="David">Jemes Rodrigez</h2>
+                    <p class="ceo">MANAGER</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container5">
+            <div class="high-dv">
+                <p class="CASE">FEATURES CASE</p>
+                <h1 class="latest">Our Latest Case Study
+                    For Your Business</h1>
+                <div class="bordera"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="slider">
+                <div class="slide2">
+                    <div class="image1">
+                        <img class="one-a" src="./case1.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case2.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case3.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case4.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case1.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case2.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case3.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+                    <div class="image1">
+                        <img class="one-a" src="./case4.jpg" alt="">
+                        <div class="color-div"></div>
+                        <div class="white-card">
+                            <h2 class="Solution">Solution for financial</h2>
+                            <p class=" Digital">Digital marketing</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="small-line">
+                <div class="lin1"></div>
+                <div class="lin2"></div>
+
+            </div>
+            <div class="high-dv">
+                <p class="CASE">PROCESS</p>
+                <h1 class="latest">Our Working Process</h1>
+                <div class="bordera"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="scale-dv1">
+                <div class="main-circle1">
+                    <div class="circle1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-blue">
+                        <p class="oen">1</p>
+                    </div>
+                    <div class="dot"></div>
+                </div>
+                <div class="main-circle2">
+                    <div class="circle1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-blue">
+                        <p class="oen">2</p>
+                    </div>
+                    <div class="dot"></div>
+                </div>
+                <div class="main-circle3">
+                    <div class="circle1"></div>
+                    <div class="circle-1"></div>
+                    <div class="circle-blue">
+                        <p class="oen">3</p>
+                    </div>
+                    <!-- <div class="dot"></div> -->
+                </div>
+
+            </div>
+            <div class="box-card">
+                <div class="box-card1">
+                    <h2 class="select">Select A Project</h2>
+                    <p class="Project">Select A Project
+                        We have the technology and industry expertise to develop solutions that can connect people and
+                        businesses across variety of mobile devices.</p>
+                </div>
+                <div class="box-card2">
+                    <h2 class="select">Project Analysis</h2>
+                    <p class="Project">Select A Project
+                        We have the technology and industry expertise to develop solutions that can connect people and
+                        businesses across variety of mobile devices.</p>
+                </div>
+                <div class="box-card3">
+                    <h2 class="select">Deliver Result</h2>
+                    <p class="Project">Select A Project
+                        We have the technology and industry expertise to develop solutions that can connect people and
+                        businesses across variety of mobile devices.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container6">
+            <div class="conatin">
+                <div class="conatin1">
+                    <p class="cell">+880 013 143 206</p>
+                    <h1 class="Make">To Make Requests For The
+                        Further Information</h1>
+
+                    <button class="now">Join With Now</button>
+                </div>
+                <div class="conatin1">
+                    <div class="gaol">
+                        <div class="gaol1"></div>
+                        <div class="goal2">
+                            <i class="fa-solid fa-play tw"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container7">
+            <div class="boder-card">
+                <div class="card-border1">
+                    <h1 class="ok">0 K</h1>
+                    <p class="Happy">Happy Clients</p>
+                </div>
+                <div class="card-border1">
+                    <h1 class="ok">1280 +</h1>
+                    <p class="Happy">Account Number</p>
+                </div>
+                <div class="card-border1">
+                    <h1 class="ok">10 K</h1>
+                    <p class="Happy">Finished Projects</p>
+                </div>
+                <div class="card-border1">
+                    <h1 class="ok">992 +</h1>
+                    <p class="Happy">Win Awards</p>
+                </div>
+            </div>
+            <div class="high-dv">
+                <p class="CASE">TESTIMONIALS</p>
+                <h1 class="latest">What Says <br>
+                    Our Happy Clients</h1>
+                <div class="bordera"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="last-card">
+                <div class="last-slide">
+                    <div class="last-card1">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="last-card2">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="last-card2">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="last-card2">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="last-card2">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="last-card1">
+                        <div class="simple-card">
+                            <p class="ipsum">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do <br>
+                                eiusmod tempor incididunt ut
+                                labore et <br> dolore magna aliqua.</p>
+
+                        </div>
+                        <div class="circle-image1">
+                            <img class="aa1" src="./testi1.jpg" alt="">
+
+                        </div>
+                        <div class="icon-div">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <i class="fa-solid fa-star gray"></i>
+                            <h2 class="jamal">Jamal Vviyan</h2>
+                            <p class="Developer">Developer</p>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container8">
+            <div class="circl-onea">
+                <img class="about-circle" src="./about-circle.png" alt="">
+            </div>
+            <div class="high-dv">
+                <p class="CASEs">GET QUOTE</p>
+                <h1 class="latests">Make An <br>
+                    Free Consultant</h1>
+                <div class="bordera"></div>
+                <div class="circle4"></div>
+            </div>
+            <div class="text-dv">
+                <input class="input" type="text" placeholder="Name">
+                <input class="input1" type="text" placeholder="Email">
+                <input class="input2" type="text" placeholder="Phone">
+                <input class="input1" type="text" placeholder="Website">
+                <textarea class="input3" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            </div>
+            <button class="free">Free Consultancy</button>
+
+        </div>
+        <div class="container9">
+            <div class="line1">
+                <div class="line-box">
+                    <p class="MEMBER">LATEST ARTICLE</p>
+                    <h1 class="our">See Our Latest <br>
+                        Blog Posts</h1>
+                    <div class="border2"></div>
+                    <div class="circle9"></div>
+                </div>
+                <div class="line-box">
+                    <button class="view">Sell All Blogs</button>
+                </div>
+            </div>
+            <div class="image-slider">
+                <div class="image-slide1">
+                    <div class="image-slide3">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog06-560x550.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="image-slide4">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog-2-390x290.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="image-slide4">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog1-560x550.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="image-slide4">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog06-560x550.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="image-slide4">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog-2-390x290.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="image-slide4">
+                        <div class="image-tag">
+                            <img class="blogs" src="./blog1-560x550.jpg" alt="">
+                            <button class="Wordpress">Wordpress</button>
+                        </div>
+                        <div class="section-one">
+                            <div class="section-two">
+                                <p class="techno">Techno</p>
+                            </div>
+                            <div class="section-thre">
+                                <p class="techno">september 06 2023</p>
+                            </div>
+                        </div>
+                        <h1 class="tiktok">Tiktok Illegally collecting data sharing</h1>
+                        <p class="Transformation">Digital Transformation in Healthcare in 2022: Lorem ipsum dolor sit
+                            amet consectet</p>
+                        <h3 class="more1">Read More +</h3>
+                    </div>
+                    <div class="small-line">
+                        <div class="lin1"></div>
+                        <div class="lin2"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="small-line">
+                <div class="lin1"></div>
+                <div class="lin2"></div>
+
+            </div>
+
+        </div>
+        <div class="container10">
+            <h1 class=" Subscribe">Subscribe Our Newsletter</h1>
+            <div class="last-section">
+                <input class="last" type="text" placeholder="Enter Your Email*">
+                <button class="comment">Subscribe</button>
+            </div>
+        </div>
+        <div class="container11">
+            <div class="footer-dv">
+                <div class="footer-block">
+                    <div class="footer-logo">
+                        <img src="./logo2-1.png" alt="">
+                    </div>
+                    <p class="Completely">Completely strategize client-cent Phosfluorescently iterate efficient
+                        internal or organic.</p>
+                    <h3 class=" Follow">Follow Us</h3>
+                    <div class="footer-icon">
+                        <i class="fa-brands fa-facebook-f alone"></i>
+                    </div>
+                    <div class="footer-icon1">
+                        <i class="fa-brands fa-instagram alone"></i>
+                    </div>
+                    <div class="footer-icon1">
+                        <i class="fa-brands fa-twitter alone"></i>
+                    </div>
+                    <div class="footer-icon1">
+                        <i class="fa-brands fa-youtube alone"></i>
+                    </div>
+                </div>
+                <div class="footer-block1">
+                    <h2 class="quick">Quick Links</h2>
+                    <ul>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i>
+                            Home</li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i>About Us</li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i>Contacts</li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i>Services</li>
+                        <li class="footer-li"><i class="fa-solid fa-arrow-right"></i>our Team</li>
+                    </ul>
+                </div>
+                <div class="footer-block2">
+                    <h2 class="h2-text">Popular Post</h2>
+                    <div class="footer-image">
+                        <div class="image1-a">
+                            <img class="bba" src="./blog06-560x550.jpg" alt="">
+                        </div>
+                        <div class="text-block">
+                            <h2 class="collecting">Tiktok Illegally collecting data sharing</h2>
+                            <p class="janur">september 06, 2023</p>
+                        </div>
+                    </div>
+                    <div class="footer-image1">
+                        <div class="image1-a">
+                            <img class="bba" src="./blog06-560x550.jpg" alt="">
+                        </div>
+                        <div class="text-block">
+                            <h2 class="collecting">Tiktok Illegally collecting data sharing</h2>
+                            <p class="janur">september 06, 2023</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-block3">
+                    <h2 class="Info">Contact Info</h2>
+                    <div class="end-section">
+                        <div class="rounder-border">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3 class="Location">
+                            Location</h3>
+                        <p class="street">55 Main Street, New York.</p>
+                    </div>
+                    <div class="end-section">
+                        <div class="rounder-border">
+                            <i class="fa-regular fa-envelope da"></i>
+                        </div>
+                        <h3 class="Location">
+                            Email Us</h3>
+                        <p class="street">example@gmail.com</p>
+                    </div>
+                    <div class="end-section">
+                        <div class="rounder-border">
+                            <i class="fa-solid fa-phone-volume da"></i>
+                        </div>
+                        <h3 class="Location">
+                            Phone Us</h3>
+                        <p class="street">+012 (345) 678 99</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="end-footer">
+                <p class="Rights">© 2022 Techno.All Rights Reserved.</p>
+                <div class="end-footer1">
+                    <p class="Privacy">
+                        Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         Terms & Conditions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Contact Us
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- </div> -->
+
+
+
+</body>
+
+</html>
